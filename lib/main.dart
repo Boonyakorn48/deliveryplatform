@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'features/auth/data/auth_state.dart';
 import 'features/customer/data/cart_state.dart';
-import 'features/customer/presentation/customer_home_screen.dart';
+import 'routes/app_router.dart';
 import 'theme/app_theme.dart';
 
 void main() {
@@ -22,7 +22,7 @@ class DeliveryPlatformApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Delivery Platform',
         theme: AppTheme.light,
-        home: const CustomerHomeScreen(),
+        home: const AppRouter(),
       ),
     );
   }
